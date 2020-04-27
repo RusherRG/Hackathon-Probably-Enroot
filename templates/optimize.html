@@ -1,52 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-		
-	<title>Rail-It</title>
-	<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+
+    <title>Rail-It</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
-    
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"></head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+  </head>
 
-<body>
-	
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <body>
     <div id="tt" class="row">
-        <div class="col s12 m4">
+      <div class="col s12 m4">
         <div class="card blue-grey darken-1">
-        <div class="card-content white-text">
-          <span class="card-title">Train Info</span>
+          <div class="card-content white-text">
+            <span class="card-title">Train Info</span>
             <form id="formoid" onsubmit="return false" method="post">
-                <div>
-                    <label class="title">No. of Trains</label>
-                    <input type="text" id="name" name="name" >
-                </div>
-                <div>
-                    <label class="title">Max</label>
-                    <input type="text" id="name2" name="name2" >
-                </div>
-                <div>
-                    <input type="submit" id="submitButton"  name="submitButton" value="Submit" onclick="plot()">
-                </div>
+              <div>
+                <label class="title">No. of Trains</label>
+                <input type="text" id="name" name="name" />
+              </div>
+              <div>
+                <label class="title">Max</label>
+                <input type="text" id="name2" name="name2" />
+              </div>
+              <div>
+                <input
+                  type="submit"
+                  id="submitButton"
+                  name="submitButton"
+                  value="Submit"
+                  onclick="plot()"
+                />
+              </div>
             </form>
+          </div>
         </div>
-        
       </div>
-        </div>
 
-        <div id="myDiv" style="width: 60%;
-position: absolute;
-right: 2vw;">
-
-        </div>
+      <div id="myDiv" style="width: 60%; position: absolute; right: 2vw;"></div>
     </div>
 
-	
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="{{ url_for('static', filename='opt.js') }}"></script>
-</body>
+  </body>
+</html>
