@@ -38,6 +38,23 @@
 
 ------------------------------------------
 
+### Installation and Deployment
+
+Using Docker
+
+``` 
+docker build . -t railit
+docker run -p 5000:5000 railit
+```
+
+Using Python
+
+``` 
+python3 app.py
+```
+
+------------------------------------------
+
 ### Add-Ons
 
 * [ ] Chatbot for the users to know the live location of any train and to notify them about any delays which may be there. 
